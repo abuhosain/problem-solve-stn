@@ -84,4 +84,28 @@ function sumOfEvenNumbers(numArray) {
 const sumEven = sumOfEvenNumbers(numbers);
 
 // Print the result
-console.log(sumEven);
+// console.log(sumEven);
+
+
+// 10. Task: Functional Programming - Reduce
+
+// Write a function that uses the reduce function to calculate the total value of an array of objects with a 'quantity' and 'price' property.interview
+ 
+const items = [
+    { quantity: 2, price: 10 },
+    { quantity: 3, price: 15 },
+    { quantity: 1, price: 12 },
+    { quantity: 4, price: 5 }
+  ];
+   
+  function calculateTotalValue(itemArray) {
+    return itemArray.reduce((total, item) => {
+      return total + (item.quantity * item.price);
+    }, 0);
+  }
+   
+  const totalValue = calculateTotalValue(items);
+  
+  // Print the result
+  console.log(totalValue);
+  
