@@ -62,5 +62,26 @@ const cars = [
   const sortedCars = sortCarsByYear(cars);
   
   // Print the sorted array
-  console.log(sortedCars);
-  
+//   console.log(sortedCars);
+
+
+// 6. Task: Array Reduction
+
+// Create an array of numbers. Write a function that uses the reduce method to calculate the sum of all even numbers in the array.
+   
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+ 
+function sumOfEvenNumbers(numArray) {
+  return numArray.reduce((sum, num) => {
+    if (num % 2 === 0) {
+      return sum + num;
+    }
+    return sum;
+  }, 0);
+}
+
+// Calculate the sum of even numbers
+const sumEven = sumOfEvenNumbers(numbers);
+
+// Print the result
+console.log(sumEven);
